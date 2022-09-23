@@ -10878,16 +10878,6 @@ body {
   background-color: #29347a;
 }
 
-.topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  padding: 20px;
-  width: 100%;
-  border-bottom: 1px solid #ebeef2;
-}
-
 .main-content {
   flex: 1;
   height: 100%;
