@@ -3,45 +3,9 @@
 @section('links')
    <!-- Left Sidenav -->
    <body class="dark-sidenav">
-   <div class="left-sidenav">
-    <!-- LOGO -->
-    <div class="brand">
-        <a href="crm-index.html" class="logo">
-            <span>
-                <img src="images/logo-sm.png" alt="logo-small" class="logo-sm">
-            </span>
-            <span>
-                <img src="images/logo.png" alt="logo-large" class="logo-lg logo-light">
-                <img src="images/logo-dark.png" alt="logo-large" class="logo-lg logo-dark">
-            </span>
-        </a>
-    </div>
-    <!--end logo-->
-    <div class="menu-content h-100" data-simplebar>
-        <ul class="metismenu left-sidenav-menu">
-            <li class="menu-label mt-0">Main</li>
-            <li>
-                <a href="javascript: void(0);"> <i data-feather="home" class="align-self-center menu-icon"></i><span>Dashboard</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
-                <ul class="nav-second-level" aria-expanded="false">
-                    <li>
-                        <a href="javascript: void(0);"><i class="ti-control-record"></i>Email <span class="menu-arrow left-has-menu"><i class="mdi mdi-chevron-right"></i></span></a>
-                        <ul class="nav-second-level" aria-expanded="false">
-                            <li><a href="apps-email-inbox.html">Inbox</a></li>
-                            <li><a href="apps-email-read.html">Read Email</a></li>
-                        </ul>
-                    </li>  
-                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="ti-control-record"></i>Analytics</a></li>
-                    <li class="nav-item"><a class="nav-link" href="crm-index.html"><i class="ti-control-record"></i>CRM</a></li>
-                    <li class="nav-item"><a class="nav-link" href="helpdesk-index.html"><i class="ti-control-record"></i>Helpdesk</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sales-index.html"><i class="ti-control-record"></i>Sales</a></li> 
-                </ul>
-            </li>         
-        </ul>
-    </div>
-</div>
-<!-- end left-sidenav-->
 
 
+@include('partials.sidebar')
 <div class="page-wrapper">
     <!-- Top Bar Start -->
     <div class="topbar">            
@@ -238,63 +202,3 @@
 
 @endsection
 
-
-    {{-- <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
-                <a class="navbar-brand" href="{{ url('/') }}">
-                    {{ config('app.name', 'Laravel') }}
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav me-auto">
-
-                    </ul>
-
-                    <!-- Right Side Of Navbar -->
-                    <ul class="navbar-nav ms-auto">
-                        <!-- Authentication Links -->
-                        @guest
-                            @if (Route::has('login'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                                </li>
-                            @endif
-
-                            @if (Route::has('register'))
-                                <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                                </li>
-                            @endif
-                        @else
-                            <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }}
-                                </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
-                            </li>
-                        @endguest
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
-    </div> --}}

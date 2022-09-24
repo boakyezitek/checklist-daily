@@ -74,7 +74,7 @@
         </div>
     </div>
 </div> --}}
-
+<body class="account-body accountbg">
        <!-- Log In page -->
        <div class="container">
         <div class="row vh-100 d-flex justify-content-center">
@@ -92,64 +92,10 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <ul class="nav-border nav nav-pills" role="tablist">
-                                    <li class="nav-item">
-                                        <a class="nav-link active font-weight-semibold" data-toggle="tab" href="#LogIn_Tab" role="tab">Log In</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link font-weight-semibold" data-toggle="tab" href="#Register_Tab" role="tab">Register</a>
-                                    </li>
-                                </ul>
                                  <!-- Tab panes -->
                                 <div class="tab-content">
-                                    <div class="tab-pane active p-3 pt-3" id="LogIn_Tab" role="tabpanel">                                        
-                                        <form class="form-horizontal auth-form my-4" action="index.html">
-            
-                                            <div class="form-group">
-                                                <label for="username">Username</label>
-                                                <div class="input-group mb-3">                                                                                         
-                                                    <input type="text" class="form-control" name="username" id="username" placeholder="Enter username">
-                                                </div>                                    
-                                            </div><!--end form-group--> 
-                
-                                            <div class="form-group">
-                                                <label for="userpassword">Password</label>                                            
-                                                <div class="input-group mb-3">                                  
-                                                    <input type="password" class="form-control" name="password" id="userpassword" placeholder="Enter password">
-                                                </div>                               
-                                            </div><!--end form-group--> 
-                
-                                            <div class="form-group row mt-4">
-                                                <div class="col-sm-6">
-                                                    <div class="custom-control custom-switch switch-success">
-                                                        <input type="checkbox" class="custom-control-input" id="customSwitchSuccess">
-                                                        <label class="custom-control-label text-muted" for="customSwitchSuccess">Remember me</label>
-                                                    </div>
-                                                </div><!--end col--> 
-                                                <div class="col-sm-6 text-right">
-                                                    <a href="auth-recover-pw.html" class="text-muted font-13"><i class="dripicons-lock"></i> Forgot password?</a>                                    
-                                                </div><!--end col--> 
-                                            </div><!--end form-group--> 
-                
-                                            <div class="form-group mb-0 row">
-                                                <div class="col-12 mt-2">
-                                                    <button class="btn btn-primary btn-block waves-effect waves-light" type="button">Log In <i class="fas fa-sign-in-alt ml-1"></i></button>
-                                                </div><!--end col--> 
-                                            </div> <!--end form-group-->                           
-                                        </form><!--end form-->
-                                        <div class="m-3 text-center text-muted">
-                                            <p class="">Don't have an account ?  <a href="auth-register.html" class="text-primary ml-2">Free Resister</a></p>
-                                        </div>
-                                        <div class="account-social">
-                                            <h6 class="my-4">Or Login With</h6>
-                                        </div>
-                                        <div class="btn-group btn-block">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Facebook</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Twitter</button>
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Google</button>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane px-3 pt-3" id="Register_Tab" role="tabpanel">
+
+                                    <div class="tab-pane active px-3 pt-3" id="Register_Tab" role="tabpanel">
                                         <form class="form-horizontal auth-form my-4" action="index.html">
         
                                             <div class="form-group">
@@ -179,13 +125,7 @@
                                                     <input type="password" class="form-control" name="conf-password" id="conf_password" placeholder="Enter Confirm Password">
                                                 </div>
                                             </div><!--end form-group-->
-                                            
-                                            <div class="form-group">
-                                                <label for="mo_number">Mobile Number</label>                                            
-                                                <div class="input-group mb-3">                                 
-                                                    <input type="text" class="form-control" name="mobile number" id="mo_number" placeholder="Enter Mobile Number">
-                                                </div>                               
-                                            </div><!--end form-group-->  
+                                             
                 
                                             <div class="form-group row mt-4">
                                                 <div class="col-sm-12">
@@ -207,7 +147,7 @@
                                 </div>
                             </div><!--end card-body-->
                             <div class="card-body bg-light-alt text-center">
-                                <span class="text-muted d-none d-sm-inline-block">Mannatthemes © 2020</span>                                            
+                                <span class="text-muted d-none d-sm-inline-block">Tonacode © 2022</span>                                            
                             </div>
                         </div><!--end card-->
                     </div><!--end col-->
